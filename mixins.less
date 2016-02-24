@@ -1,0 +1,15 @@
+.border-radius(@radius) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.mixin (@a) when (lightness(@a) >= 50%) {
+  background-color: mediumseagreen;
+}
+.mixin (@a) when (lightness(@a) < 50%) {
+  background-color: mediumseagreen;
+}
+.mixin (@a) {
+  color: @a;
+}
